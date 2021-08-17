@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/comments', 'CommentController@index');
+Route::get('/monthly_schedules', 'Monthly_scheduleController@index');
+Route::get('/networks', 'NetworkController@index');
+Route::get('/records', 'RecordController@index');
+Route::get('/today_schedules', 'Today_scheduleController@index');
+Route::get('/users', 'UserController@index');
